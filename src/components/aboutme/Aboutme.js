@@ -48,7 +48,7 @@ function Aboutme() {
 
       {/* Button */}
       <a
-        className="send-btn inline-block bg-green-500 hover:bg-green-600 color-white font-medium px-6 py-3 rounded-lg transition"
+        className="progress-button inline-block main-color font-medium px-6 py-3 rounded-lg transition"
         href="contact"
       >
         Send me a message

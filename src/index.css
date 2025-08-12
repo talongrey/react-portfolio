@@ -412,3 +412,77 @@ body {
 .mt-auto {
   margin-top: auto;
 }
+
+.progress-btn {
+  position: relative;
+  color: white;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Progress bar layer */
+.progress-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px; /* thickness of progress */
+  background: limegreen;
+  transition: width 0.4s ease;
+}
+
+/* On hover - progress bar fills */
+.progress-btn:hover::before {
+  width: 100%;
+}
+
+/* Optional: change text color on hover */
+.progress-btn:hover {
+  /* color: limegreen; */
+}
+
+
+.progress-button {
+  position: relative;
+  color: white;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Progress bar layer */
+.progress-button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: -webkit-fill-available; /* thickness of progress */
+  background: color-mix(in lab,var(--main-color) 20%,transparent);
+  transition: width 0.4s ease;
+}
+
+/* On hover - progress bar fills */
+.progress-button:hover::before {
+  width: 100%;
+}
+
+/* Optional: change text color on hover */
+.progress-button:hover {
+  color: var(--main-color)
+}
+
+.main-color {
+  color: var(--main-color);
+}
+
+.active {
+  color: var(--main-color);
+}
