@@ -1,4 +1,4 @@
-function Project({ order, title, explain, url }) {
+function Project({ order, title, explain, url, picName }) {
   return (
     <div
       className={`
@@ -9,9 +9,9 @@ function Project({ order, title, explain, url }) {
     >
       {/* Image */}
       <img
-        src="../../images/tablet.png"
+        src={"../../images/" + picName}
         alt="Project preview"
-        className="moving-img bg-white rounded-lg shadow p-1 w-full sm:w-1/2 h-auto"
+        className="moving-img bg-white rounded-lg p-1 w-full sm:w-1/2 h-auto"
       />
 
       {/* Details */}
