@@ -88,12 +88,12 @@ function Contact(color) {
       <div
         className="project-btn-container mt-16"
       >
-        <button
-          className="project-btn color-white transition w-fulli"
-          // href="#"
+        <a
+          className="project-btn color-white transition"
+          href="#"
         >
           Send message
-        </button>
+        </a>
       </div>
     </div>
   );

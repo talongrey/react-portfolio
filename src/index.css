@@ -490,7 +490,3 @@ nav {
 .active {
   color: var(--main-color);
 }
-
-.w-fulli {
-  width: 100%!important;
-}

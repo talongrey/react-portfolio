@@ -27,9 +27,9 @@ function Projects() {
                     picName: "AfricanOneStop.png"
                     }]
     const list = [];
-    projects.map((project, index) => (
+    projects.map((project, index) => {
         list.push(<Project key={index} order={index + 1} title={project.title} explain={project.explain} url={project.url} picName={project.picName}/>)
-    ))
+    })
     return(
         list
     )
