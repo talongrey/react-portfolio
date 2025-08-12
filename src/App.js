@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, BrowserRouter as Router  } from "react-router-dom";
 import useBreakpoint from './hooks/useBreakpoint';
 import DarkModeIcon from "@mui/icons-material/DarkMode";
+import LightModeIcon from "@mui/icons-material/LightMode";
 import Projects from './components/intro/Projects';
 import Flower from './components/Flower';
 import Aboutme from './components/aboutme/Aboutme';
@@ -65,7 +66,7 @@ export default function App() {
 
               <div className="fixed flex items-center dark-icon">
                 <div className="hidden md:block" onClick={changeColor}>
-                  <button className="px-4 py-2 rounded bg-white-600 color-white"><DarkModeIcon /></button>
+                  <button className="px-4 py-2 rounded bg-white-600 color-white">{color=="dark" ? <DarkModeIcon /> : <LightModeIcon />}</button>
                 </div>
 
                 <button
