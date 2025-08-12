@@ -15,15 +15,15 @@ function Aboutme() {
 
       {/* Intro */}
       <div className="achievement space-y-4">
-        <div>
+        <div> 
           <span className="im text-base sm:text-lg leading-relaxed">
-            I'm Talon, a dedicated <strong>Solution Architect and Web developer</strong> with expertise in <strong>React Native</strong> and <strong>Flutter</strong>. Over the past three years, I've delivered 10+ successful apps that have generated over $500K in revenue.
+            I'm Talon, a dedicated <strong>Solution Architect and Web Developer</strong> specializing in <strong>React</strong>, <strong>Next.js</strong>, and <strong>Node.js</strong>. Over the past three years, I’ve built and deployed 15+ high-performing websites and web applications, driving measurable results for clients across industries.
           </span>
         </div>
 
         <div>
           <span className="ach text-base sm:text-lg leading-relaxed">
-            I focus on creating user-centric, scalable applications that blend innovation with performance, ensuring each solution meets real business needs.
+            I focus on crafting responsive, scalable, and visually engaging experiences that align with real business goals, blending innovation with performance.
           </span>
         </div>
       </div>
@@ -35,13 +35,13 @@ function Aboutme() {
         </span>
         <ul className="list-disc list-inside space-y-2 text-base sm:text-lg">
           <li>
-            <strong>Cross-Platform Mastery</strong>: Expert in delivering seamless experiences on both iOS and Android.
+            <strong>Full-Stack Expertise</strong>: Skilled in modern JavaScript frameworks, REST APIs, and database integration for complete end-to-end solutions.
           </li>
           <li>
-            <strong>Revenue Impact</strong>: Proven track record of generating significant revenue through effective app solutions.
+            <strong>Performance & SEO Focus</strong>: Proven ability to optimize load times, accessibility, and search rankings to maximize impact.
           </li>
           <li>
-            <strong>Client Focused</strong>: I prioritize understanding client needs to craft solutions that drive success.
+            <strong>Client-Centric Approach</strong>: Deep understanding of client requirements to deliver tailored, success-driven solutions.
           </li>
         </ul>
       </div>
