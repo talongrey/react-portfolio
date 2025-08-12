@@ -280,6 +280,10 @@ body {
   .flower {
   left: 10%!important;
   }
+
+  .moving-img {
+  width: 90%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -298,6 +302,10 @@ body {
   .flower {
     left: 10%!important;
   }
+
+  .moving-img {
+    width: 90%;
+  }
 }
 
 .flower {
@@ -305,7 +313,7 @@ body {
   background: var(--datk-color);
   position: absolute;
   top: 0%;
-  left: 15%;
+  left: 35%;
   width: -webkit-fill-available;
 }
 

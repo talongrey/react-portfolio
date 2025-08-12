@@ -58,7 +58,7 @@ export default function App() {
       onMouseMove={handleMouseMove}
       onTouchMove={handleTouchMove}
     >
-      <Canvas camera={{ position: cameraPos, fov: 50 }} style={{width:'100vw', height:'100vh'}}>
+      <Canvas camera={{ position: cameraPos, fov: 50 }} style={{height:'100vh'}}>
         <ambientLight intensity={0.8} />
         <directionalLight position={[5, 5, 5]} />
         <Flower mouse={mouse} scale={scale} />
