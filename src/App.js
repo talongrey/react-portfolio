@@ -130,7 +130,7 @@ export default function App() {
                 <div className="me">
                   <span className="myname">TALON GREY</span>
                   <span className="myposition">
-                    Senior Developer
+                    Sr. Web Developer
                     <br />
                     Frontend + Backend
                   </span>
