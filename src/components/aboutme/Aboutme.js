@@ -17,7 +17,7 @@ function Aboutme() {
       <div className="achievement space-y-4">
         <div> 
           <span className="im text-base sm:text-lg leading-relaxed">
-            I'm Talon, a dedicated <strong>Solution Architect and Web Developer</strong> specializing in <strong>React</strong>, <strong>Next.js</strong>, and <strong>Node.js</strong>. Over the past three years, I’ve built and deployed 15+ high-performing websites and web applications, driving measurable results for clients across industries.
+            I'm Talon, a dedicated <strong>Senior Web Developer</strong> specializing in <strong>React</strong>, <strong>Next.js</strong>, and <strong>Node.js</strong>. Over the past eight years, I’ve built and deployed 25+ high-performing websites and web applications, driving measurable results for clients across industries.
           </span>
         </div>
 
