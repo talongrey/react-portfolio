@@ -8,12 +8,16 @@ import Projects from './components/intro/Projects';
 import Flower from './components/Flower';
 import Aboutme from './components/aboutme/Aboutme';
 import Contact from './components/contact/Contact';
+import { useSelector, useDispatch } from 'react-redux';
+import { increment, decrement, incrementByAmount } from './slices/counterSlice';
 
 export default function App() {
+
+  const value = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
   const bp = useBreakpoint();
   const [open, setOpen] = useState(false);
   const [color, setColor] = useState('dark');
-  const [dispContact, setDispConatct] = useState(0);
 
   useEffect(() => {
     if (bp === 'md' || bp === 'lg' || bp === 'xl' || bp === '2xl') {
@@ -32,9 +36,9 @@ export default function App() {
 
   const changeActive = (ev, val) => {
     if(val == 'contact') {
-      setDispConatct(1);
+      dispatch(increment());
     } else {
-      setDispConatct(0);
+      dispatch(decrement());
     }
     var i, tablinks;
 
@@ -121,7 +125,7 @@ export default function App() {
 
         {/* <Routes> */}
           {/* <Route path="/" element={ */}
-            <div id="main" style={{display : dispContact == 0 ? 'block' : 'none'}}>
+            <div id="main" style={{display : value == 0 ? 'block' : 'none'}}>
               <section className='h-full-vh' id="intro">
                 <div className="me">
                   <span className="myname">TALON GREY</span>
@@ -148,7 +152,7 @@ export default function App() {
           {/* } */}
           {/* /> */}
           {/* <Route path="/contact" element={ */}
-            <div id="contactDiv" style={{display: dispContact == 1 ? 'block' : 'none'}}>
+            <div id="contactDiv" style={{display: value == 1 ? 'block' : 'none'}}>
               <section id="contact">
                 <Contact color={color}/>
               </section>

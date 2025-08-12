@@ -309,6 +309,10 @@ body {
   }
 }
 
+nav {
+  z-index: 3;
+}
+
 .flower {
   overflow: "hidden";
   background: var(--datk-color);
@@ -415,7 +419,7 @@ body {
 
 .progress-btn {
   position: relative;
-  color: white;
+  color: var(--white-color);
   border: none;
   cursor: pointer;
   overflow: hidden;

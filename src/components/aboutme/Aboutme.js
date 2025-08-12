@@ -1,4 +1,11 @@
+import { useSelector, useDispatch } from 'react-redux';
+import { increment, decrement, incrementByAmount } from '../../slices/counterSlice';
+
 function Aboutme() {
+
+  const value = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
+
   return (
     <div className="aboutme color-white px-4 sm:px-8 lg:px-16 py-8 max-w-4xl mx-auto">
       {/* Greeting */}
@@ -49,7 +56,8 @@ function Aboutme() {
       {/* Button */}
       <a
         className="progress-button inline-block main-color font-medium px-6 py-3 rounded-lg transition"
-        href="contact"
+        // href="contact"
+        onClick={() => dispatch(increment())}
       >
         Send me a message
       </a>
