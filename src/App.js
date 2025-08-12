@@ -35,7 +35,7 @@ export default function App() {
   }, []);
 
   const changeActive = (ev, val) => {
-    if(val == 'contact') {
+    if(val === 'contact') {
       dispatch(increment());
     } else {
       dispatch(decrement());
@@ -55,13 +55,13 @@ export default function App() {
     changeActive(ev);
     if(value != 'contact') {
       window.location.href = '/#' + value;
-    } else if(value == 'contact') {
+    } else if(value === 'contact') {
       window.location.href = value;
     }
   }
 
   const changeColor = () => {
-    if(color == 'dark') {
+    if(color === 'dark') {
       document.documentElement.style.setProperty("--dark-color", "#ffffff");
       document.documentElement.style.setProperty("--white-color", "#111111");
       setColor('white');
@@ -125,7 +125,7 @@ export default function App() {
 
         {/* <Routes> */}
           {/* <Route path="/" element={ */}
-            <div id="main" style={{display : value == 0 ? 'block' : 'none'}}>
+            <div id="main" style={{display : value === 0 ? 'block' : 'none'}}>
               <section className='h-full-vh' id="intro">
                 <div className="me">
                   <span className="myname">TALON GREY</span>
@@ -152,7 +152,7 @@ export default function App() {
           {/* } */}
           {/* /> */}
           {/* <Route path="/contact" element={ */}
-            <div id="contactDiv" style={{display: value == 1 ? 'block' : 'none'}}>
+            <div id="contactDiv" style={{display: value === 1 ? 'block' : 'none'}}>
               <section id="contact">
                 <Contact color={color}/>
               </section>
