@@ -11,20 +11,29 @@ function Contact(color) {
       MuiInputBase: {
         styleOverrides: {
           input: {
-            color: "red", // all input text color
+            color: color.color == 'dark' ? "#ffffff" : '#111111', // all input text color
           },
         },
       },
       MuiInputLabel: {
         styleOverrides: {
           root: {
-            color: "red", // default
+            color: color.color == 'dark' ? "#ffffff" : '#111111', // default
             "&.Mui-focused": {
-              color: "red", // focused
+              color: color.color == 'dark' ? "#ffffff" : '#111111', // focused
             },
           },
         },
       },
+      MuiInput: {
+      styleOverrides: {
+        underline: {
+          "&:before": { borderBottomColor: "#414141" }, // default
+          // "&:hover:not(.Mui-disabled):before": { borderBottomColor: "#61fe25" }, // hover
+          "&:after": { borderBottomColor: "#61fe25" }, // focused
+        },
+      },
+    },
     },
   });
 
@@ -79,12 +88,11 @@ function Contact(color) {
       <div
         className="project-btn-container mt-16"
       >
-        <a
-          className="project-btn color-white transition"
-          href="#"
+        <button
+          className="project-btn color-white transition w-fulli"
         >
           Send message
-        </a>
+        </button>
       </div>
     </div>
   );

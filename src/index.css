@@ -195,7 +195,7 @@ body {
 }
 
 .project-btn {
-  padding: 1rem 5.5rem;
+  padding: 1rem 4.5rem;
   box-sizing: border-box;
     position: relative;
   background-color: var(--main-color);
@@ -238,6 +238,7 @@ body {
   /* transform: translate(-50%, -50%); */
   transition: transform 0.05s linear; /* smooth movement */
   height: 25rem;
+  background-color: transparent;
 }
 
 .me {
@@ -280,6 +281,10 @@ body {
   .flower {
   left: 10%!important;
   }
+
+  .moving-img {
+  width: 90%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -298,6 +303,14 @@ body {
   .flower {
     left: 10%!important;
   }
+
+  .moving-img {
+    width: 90%;
+  }
+}
+
+nav {
+  z-index: 3;
 }
 
 .flower {
@@ -305,7 +318,7 @@ body {
   background: var(--datk-color);
   position: absolute;
   top: 0%;
-  left: 15%;
+  left: 35%;
   width: -webkit-fill-available;
 }
 
@@ -402,4 +415,82 @@ body {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.progress-btn {
+  position: relative;
+  color: var(--white-color);
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Progress bar layer */
+.progress-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px; /* thickness of progress */
+  background: limegreen;
+  transition: width 0.4s ease;
+}
+
+/* On hover - progress bar fills */
+.progress-btn:hover::before {
+  width: 100%;
+}
+
+/* Optional: change text color on hover */
+.progress-btn:hover {
+  /* color: limegreen; */
+}
+
+
+.progress-button {
+  position: relative;
+  color: white;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Progress bar layer */
+.progress-button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: -webkit-fill-available; /* thickness of progress */
+  background: color-mix(in lab,var(--main-color) 20%,transparent);
+  transition: width 0.4s ease;
+}
+
+/* On hover - progress bar fills */
+.progress-button:hover::before {
+  width: 100%;
+}
+
+/* Optional: change text color on hover */
+.progress-button:hover {
+  color: var(--main-color)
+}
+
+.main-color {
+  color: var(--main-color);
+}
+
+.active {
+  color: var(--main-color);
+}
+
+.w-fulli {
+  width: 100%!important;
 }
